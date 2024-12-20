@@ -28,5 +28,5 @@ window.onscroll = () =>{
     navbar.classList.remove('active');
     cartItem.classList.remove('active');
     searchForm.classList.remove('active');
-
+//Cuando el usuario se desplaza hacia arriba o abajo, activa la funcion y saca la navbar, carrito y buscador.
 }
