@@ -265,6 +265,90 @@ color: var(--black);
     line-height: 1.8;
 }
 
+.menu .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*grid-template-columns establece numero y tamaño de columnas.
+    Repeat crea multiples columnas sin repetir manualmente*/
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+}
+
+.menu .box-container .box img{
+    height: 10rem;
+}
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;        
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: 5rem 0;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;/*tacha el precio span, mostrando como que el precio es anterior*/
+}
+
+.menu .box-container .box:hover{
+    background-color: #fff;
+}
+
+.menu .box-container .box:hover >*{
+    color: var(--black);
+    /*Aplica el color a los hijos directos de .box
+el > significa hijos directos y * significa cualquier tipo de elemento, ya sea p, span, etc.
+Asi que los cambios de van a aplicar a los elementos del box que estan dentro del menu,box-container y box*/
+}
+
+.products .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    /*grid-template-columns establece numero y tamaño de columnas.
+    Repeat crea multiples columnas sin repetir manualmente*/
+    gap: 1.5rem;
+}
+
+.products .box-container .box{
+    text-align: center;
+    border: var(--border);
+    padding: 2rem;
+}
+
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    color: #fff;
+    margin: .3rem;
+}
+
+.products .box-container .box .icons a:hover{
+    background-color: var(--main-color);
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
