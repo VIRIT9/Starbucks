@@ -50,11 +50,14 @@ section{
     text-transform: uppercase;
     padding-bottom: 3.5rem;
     font-size: 4rem;
+    /*los heading quedan de color blanco*/
 }
 
 .heading span{
     color: var(--main-color);
     text-transform: uppercase;
+    /*los heading span quedan de color dorado*/
+    /*los span son para seleccionar una parte especifica del texto y agregarle estilo*/
 }
 
 .btn{
@@ -374,8 +377,91 @@ Asi que los cambios de van a aplicar a los elementos del box que estan dentro de
     font-size: 1.5rem;
 }
 
+.review .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
 
+.review .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
 
+.review .box-container .box p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 2rem 0;
+}
+
+.review .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;/*genera bordes redondos*/
+    object-fit: cover;
+}
+
+.review .box-container .box h3{
+    padding: 1rem 0;
+    font-size: 2rem;
+    color: #fff;
+}
+
+.review .box-container .stars i{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.contact .row{
+    display: flex;
+    background: var(--black);
+    flex-wrap: wrap;/*permite que los items puedan ubicarse uno abajo del otro cuando no hay espacio*/
+    gap: 1rem;
+}
+
+.contact .row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.contact .row form{
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #fff;
+}
+
+.contact .row form .inputBox{
+display: flex;
+align-items: center;
+margin-top: 2rem;
+margin-bottom: 2rem;
+background: var(--bg);
+border: var(--border);
+}
+
+.contact .row form .inputBox span{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+
+.contact .row form .inputBox input{
+    color: #fff;
+    font-size: 1.7rem;
+    width: 100%;
+    padding: 2rem;
+    text-transform: none;
+    background: none;
+}
 
 
 
