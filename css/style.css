@@ -463,7 +463,105 @@ border: var(--border);
     background: none;
 }
 
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
 
+.blogs .box-container .box{
+    border: var(--border);
+}
+
+.blogs .box-container .box .image{ /*modifica el estilo del contenedor de la clase image, no las imagenes*/
+    height: 25rem;
+    overflow: hidden; /* Oculta el contenido que salga de los limites del contenedor, si no cabe no se vera en la pagina*/
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%; /*va a tomar la misma height del contenedor, o sea 25rem*/
+    object-fit: cover; 
+    width: 100%; /*va a tomar la misma width del contenedor*/
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.1);/*Escala el tamaño de la imagen al 120% de su tamaño original (1.2 = 120%), permitiendo un efecto zoom*/
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color: #fff;
+}
+
+.blogs .box-container .box .content span{
+    color: var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #ccc;
+    padding: 1rem 0;
+}
+
+.footer{
+    background-color: var(--black);
+    text-align: center;
+}
+
+.footer .share{
+    padding: 1rem 0;
+}
+
+.footer .share a{ /*modifica el estilo de los iconos*/
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: 3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a{
+    padding: .7rem 2rem;
+    color: #fff;
+    border: var(--border);
+    font-size: 2rem;
+}
+
+.footer .links a:hover{
+    background: var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding: 1.5rem;
+}
+
+.footer .credit span{
+    color: var(--main-color);
+}
 
 
 
