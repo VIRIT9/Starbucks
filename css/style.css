@@ -564,14 +564,6 @@ border: var(--border);
 }
 
 
-
-
-
-
-
-
-
-
 /* media queries */
 @media (max-width:991px){
 
@@ -640,6 +632,4 @@ border: var(--border);
     html{
         font-size: 50%;
     }
-
-    
 }
